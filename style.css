@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    line-height: 1.6;
+}
+
+a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #16213e;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    color: #eee;
+}
+
+nav ul a:hover {
+    color: #00d9ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #00d9ff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #00d9ff;
+    color: #1a1a2e;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00b8d4;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 50px;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #00d9ff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00d9ff;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    color: #ccc;
+}
+
+section p {
+    color: #bbb;
+    max-width: 800px;
+}
+
+.card {
+    background: #16213e;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #00d9ff;
+}
+
+.card h4 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #aaa;
+    margin: 0;
+}
+
+.tech {
+    display: inline-block;
+    background: #00d9ff;
+    color: #1a1a2e;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 5px 0 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: #0f3460;
+    color: #00d9ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #16213e;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    section {
+        padding: 40px 20px;
+    }
+}
